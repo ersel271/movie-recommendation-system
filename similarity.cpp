@@ -64,6 +64,8 @@ RatingMap Similarity::similarityMatrix(bool isMovieBased, const DataHash2D& dh) 
                 matrix[entity1][entity2] = similarity; //Upper triangular.
                 matrix[entity2][entity1] = similarity; //Lower triangular.
                 th.unlock();
+		/*TODO: Update the programme so that only the upper triangle (or only the lower triangle) similarity 
+		matrix can also be used. This can reduce the amount of memory spent on the similarity matrix by half.*/
             }
         }
     };
