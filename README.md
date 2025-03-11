@@ -90,15 +90,7 @@ Currently implemented similarity measure:
 - **Pearson Correlation**: Measures the linear correlation between two sets of ratings.
 - **Jaccard Similarity**: Measures the similarity between two sets based on the ratio of their intersection to their union.
 
-## Dataset Format
-
-The dataset consists of a list of ratings in the following format:
-- **CSV Format**: Each line represents a rating entry with `userId`, `movieId`, and `rating`. The columns are separated by commas.
-  Example:
-
-- **TXT Format**: Each line represents a rating entry with `userId`, `movieId`, and `rating`, separated by spaces.
-Example:
-
+## Dataset
 The project includes three dataset files:
 - **`public_training_data.txt`**: Used for training the model.
 - **`public_test_data.txt`**: Used for testing the model.
